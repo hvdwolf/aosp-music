@@ -16,6 +16,9 @@
 
 <merge xmlns:android="http://schemas.android.com/apk/res/android">
 
+<!--    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/altlayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/navbarbg">
+-->
+
     <View 
         android:layout_width="match_parent"
         android:layout_height="1px"
@@ -24,10 +27,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ff7f7f7f"
+        android:background="#107f7f7f"
         android:paddingTop="1dip"
         android:paddingBottom="4dip"
         android:orientation="horizontal">
+
+        <!-- icon is used for albumart, the grabber in edit playlist mode, and the playlist icon in the list of playlists -->
+        <ImageView android:id="@+id/icon"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
         <TextView android:id="@+id/currenttime"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -88,8 +99,10 @@
     </LinearLayout>
 
     <SeekBar android:id="@android:id/progress"
-        android:background="#ff7f7f7f"
+        android:background="#107f7f7f"
         style="?android:attr/progressBarStyleHorizontal"
+        android:progressBackgroundTint="#407f7f7f"
+        android:progressTint="@color/progressbargreen"
         android:layout_width="match_parent"
         android:layout_height="36dip"
         android:paddingLeft="8dip"

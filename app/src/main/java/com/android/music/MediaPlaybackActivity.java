@@ -108,6 +108,7 @@ public class MediaPlaybackActivity extends Activity
         mAlbumName = (TextView) findViewById(R.id.albumname);
         mTrackName = (TextView) findViewById(R.id.trackname);
 
+
         View v = (View) mArtistName.getParent();
         v.setOnTouchListener(this);
         v.setOnLongClickListener(this);

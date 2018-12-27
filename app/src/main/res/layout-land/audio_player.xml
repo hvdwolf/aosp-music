@@ -14,14 +14,15 @@
      limitations under the License.
 -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bk_player"
     android:orientation="vertical">
-
 
     <!-- This is the LinearLayout that contains the album art, function buttons and album/artist/track info -->
     <LinearLayout
+        android:background="@drawable/playlist_tile"
         android:layout_width="match_parent"
         android:layout_height="0dip"
         android:layout_weight="1"
@@ -30,8 +31,9 @@
         <ImageView
             android:id="@+id/album"
             android:background="@drawable/album_border_large"
-            android:layout_width="360dip"
-            android:layout_height="360dip"
+            tools:ignore="ContentDescription"
+            android:layout_width="360dp"
+            android:layout_height="360dp"
             android:layout_marginLeft="12dip"
             android:layout_marginRight="15dip"
             android:layout_marginTop="12dip" />
@@ -51,17 +53,20 @@
 
                <ImageButton android:id="@+id/curplaylist"
                     android:src="@drawable/ic_mp_current_playlist_btn"
+                   tools:ignore="ContentDescription"
                     android:layout_width="82dip"
                     android:layout_height="45dip"
                     android:layout_marginRight="8dip"
                     android:nextFocusLeft="@id/curplaylist" />
 
                <ImageButton android:id="@+id/shuffle"
+                   tools:ignore="ContentDescription"
                     android:layout_width="82dip"
                     android:layout_height="45dip"
                     android:layout_marginRight="8dip" />
 
                <ImageButton android:id="@+id/repeat"
+                   tools:ignore="ContentDescription"
                     android:layout_width="82dip"
                     android:layout_height="45dip" />
 
@@ -78,6 +83,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    tools:ignore="ContentDescription"
                     android:layout_marginRight="4dip"
                     android:src="@drawable/ic_mp_artist_playback" />
 
@@ -104,6 +110,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="4dip"
+                    tools:ignore="ContentDescription"
                     android:src="@drawable/ic_mp_album_playback" />
 
                 <TextView android:id="@+id/albumname"
@@ -128,6 +135,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    tools:ignore="ContentDescription"
                     android:layout_marginRight="4dip"
                     android:src="@drawable/ic_mp_song_playback" />
 

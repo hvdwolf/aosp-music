@@ -30,9 +30,16 @@
         android:clickable="true"
         android:focusable="true"
 	    android:background="@drawable/appwidget_button_left"
-        android:paddingLeft="18dip"
-        android:paddingRight="8dip"
-        >
+        android:paddingStart="18dip"
+        android:paddingEnd="8dip">
+
+ <!--       <ImageView
+            android:id="@+id/album"
+            android:layout_height="match_parent"
+            android:contentDescription="divider"
+            android:scaleType="fitStart"
+            android:src="@drawable/albumart_mp_unknown" /> -->
+
 
         <TextView
             android:id="@+id/title"
@@ -64,7 +71,7 @@
         android:layout_width="1dip"
         android:layout_height="match_parent"
         android:background="@drawable/appwidget_divider"
-        />
+        android:contentDescription="divider" />
 
     <ImageButton
         android:id="@+id/control_previous"
@@ -79,6 +86,7 @@
  	<ImageView
         android:layout_width="1dip"
         android:layout_height="match_parent"
+        android:contentDescription="divider"
         android:background="@drawable/appwidget_divider"
         />
 
@@ -95,6 +103,7 @@
  	<ImageView
         android:layout_width="1dip"
         android:layout_height="match_parent"
+        android:contentDescription="divider"
         android:background="@drawable/appwidget_divider"
         />
         
