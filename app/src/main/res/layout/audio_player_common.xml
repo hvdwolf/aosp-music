@@ -33,12 +33,12 @@
         android:orientation="horizontal">
 
         <!-- icon is used for albumart, the grabber in edit playlist mode, and the playlist icon in the list of playlists -->
-        <ImageView android:id="@+id/icon"
+ <!--       <ImageView android:id="@+id/icon"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentBottom="true"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"/> -->
 
         <TextView android:id="@+id/currenttime"
             android:textAppearance="?android:attr/textAppearanceMedium"
