@@ -53,20 +53,23 @@
 
                <ImageButton android:id="@+id/curplaylist"
                     android:src="@drawable/ic_mp_current_playlist_btn"
-                   tools:ignore="ContentDescription"
+                    tools:ignore="ContentDescription"
+                    android:background="@color/transparent"
                     android:layout_width="124dip"
                     android:layout_height="68dip"
                     android:layout_marginRight="8dip"
                     android:nextFocusLeft="@id/curplaylist" />
 
                <ImageButton android:id="@+id/shuffle"
-                   tools:ignore="ContentDescription"
+                    tools:ignore="ContentDescription"
+                    android:background="@color/transparent"
                     android:layout_width="124dip"
                     android:layout_height="68dip"
                     android:layout_marginRight="8dip" />
 
                <ImageButton android:id="@+id/repeat"
-                   tools:ignore="ContentDescription"
+                    tools:ignore="ContentDescription"
+                    android:background="@color/transparent"
                     android:layout_width="124dip"
                     android:layout_height="68dip" />
 
