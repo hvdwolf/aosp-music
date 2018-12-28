@@ -23,11 +23,12 @@
     android:layout_height="64dip"
     android:focusable="true"
     android:visibility="gone"
-    android:background="@drawable/music_bottom_playback_bg"
+    android:background="@drawable/bk_player"
     android:orientation="vertical"
     android:paddingTop="3dip"
     android:paddingBottom="2dip">
-
+<!--     android:background="@drawable/music_bottom_playback_bg"
+ -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
