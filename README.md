@@ -28,3 +28,6 @@ This music player listens to the Joying Music player intents. This means that th
 
 **Tabs overview**
 ![tabs overview](./images/tab-screen.jpg)
+
+**The very simple big button widget**
+![widget](./images/simple_widget.jpg)
