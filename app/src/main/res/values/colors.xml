@@ -21,5 +21,7 @@
     <color name="transparent">#00000000</color>
     <color name="progressbargreen">#ff91cc06</color>
 
+    <color name="transparent_expanding_child_background">#501a5088</color>
+
 </resources>
 

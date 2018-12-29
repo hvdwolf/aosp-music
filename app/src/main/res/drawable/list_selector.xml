@@ -22,5 +22,5 @@
 <!--    <item android:state_selected="false"
         android:drawable="@color/expanding_child_background" /> -->
     <item android:state_selected="false"
-        android:drawable="@color/transparent" />
+        android:drawable="@color/transparent_expanding_child_background" />
 </selector>
