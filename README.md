@@ -14,6 +14,8 @@ There are a couple of modifications:
 * The notification is clearer and has the album art visible on it.
 * The lockscreen shows the default album art if there's no album art found for a song.
 * Set minimal SDK to 23 (Android 6.0) and target to 26 (Android 8) for some optimization and uses of styles.
+* icon buttons "materialized"
+* colors set to "Joying blue".
 
 [Full Changelog](https://github.com/hvdwolf/aosp-music/blob/master/Changelog.md)
 
