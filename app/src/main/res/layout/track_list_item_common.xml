@@ -28,7 +28,7 @@
 
     <TextView android:id="@+id/duration"
         android:textSize="12sp"
-        android:textColor="?android:attr/textColorTertiary"
+        android:textColor="@color/normal_text"
         android:textStyle="bold"
         android:paddingLeft="4dip"
         android:paddingRight="11dip"
@@ -41,6 +41,7 @@
     <!-- The height is set to half the height of the parent, which is 64 dip -->
     <TextView android:id="@+id/line1"
         android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/normal_text"
         android:layout_width="wrap_content"
         android:paddingLeft="9dip"
         android:layout_height="wrap_content"
@@ -53,6 +54,7 @@
     <!-- The height is set to half the height of the parent, which is 64 dip -->
     <TextView android:id="@+id/line2" android:visibility="visible"
         android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/normal_text"
         android:singleLine="true"
         android:ellipsize="end"
         android:paddingLeft="9dip"

@@ -13,10 +13,12 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+<!-- This layout is used in the Artist screen to display the rows -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bk_player"
     android:orientation="vertical"
     android:gravity="center_vertical" >
 
