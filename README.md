@@ -23,7 +23,7 @@ This music player listens to the Joying Music player intents. This means that th
 **Original screen**
 ![Original main player screen](./images/org-aosp-mainscreen_2.jpg)<br>
 
-**Big button & Big font screen**
+**Big button & big font screen with "materialized" icon buttons**
 ![Big button big fonts main player screen](./images/bigbutton-aosp-mainscreen3.jpg)<br>
 
 **Tabs overview**
