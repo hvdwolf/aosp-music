@@ -16,6 +16,7 @@
 ** limitations under the License.
 */
 -->
+<!-- This view shows the separate "lines" in the playlist, album and numbers view, e.g. the entries -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="64dip"
