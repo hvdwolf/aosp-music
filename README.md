@@ -13,10 +13,11 @@ There are a couple of modifications:
 * Increased fonts and album art in the main player screen. *(see below)*
 * The notification is clearer and has the album art visible on it.
 * The lockscreen shows the default album art if there's no album art found for a song.
-* Set minimal SDK to 23 (Android 6.0) and target to 26 (Android 8) for some optimization and uses of styles.
+* Set minimal SDK to 23 (Android 6.0) and target to 26 (Android 8) for some optimization and use of styles.
 * icon buttons "materialized"
 * colors set to "Joying blue".
 
+[Download apk](https://github.com/hvdwolf/aosp-music/releases)<br>
 [Full Changelog](https://github.com/hvdwolf/aosp-music/blob/master/Changelog.md)
 
 **Only for Joying FYT users**
