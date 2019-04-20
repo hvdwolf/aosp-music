@@ -584,7 +584,7 @@ public class ArtistAlbumBrowserActivity extends ExpandableListActivity
             mQueryHandler = new QueryHandler(context.getContentResolver());
 
             Resources r = context.getResources();
-            mNowPlayingOverlay = r.getDrawable(R.drawable.indicator_ic_mp_playing_list);
+            mNowPlayingOverlay = r.getDrawable(R.drawable.indicator_ic_mp_playing_large);
             mDefaultAlbumIcon = (BitmapDrawable) r.getDrawable(R.drawable.albumart_mp_unknown_list);
             // no filter or dither, it's a lot faster and we can't tell the difference
             mDefaultAlbumIcon.setFilterBitmap(false);

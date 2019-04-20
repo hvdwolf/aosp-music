@@ -28,10 +28,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
+import android.content.res.Resources;
 import android.database.Cursor;
 import android.database.MatrixCursor;
 import android.database.MergeCursor;
 import android.database.sqlite.SQLiteException;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
 import android.net.Uri;
 import android.os.Bundle;
@@ -529,8 +534,11 @@ public class PlaylistBrowserActivity
     }
 
     static class PlaylistListAdapter extends SimpleCursorAdapter {
+        private final Drawable mNowPlayingOverlay;
+        private final BitmapDrawable mDefaultAlbumIcon;
         int mTitleIdx;
         int mIdIdx;
+        private final Resources mResources;
         private PlaylistBrowserActivity mActivity = null;
         private AsyncQueryHandler mQueryHandler;
         private String mConstraint = null;
@@ -557,6 +565,18 @@ public class PlaylistBrowserActivity
             mActivity = currentactivity;
             getColumnIndices(cursor);
             mQueryHandler = new QueryHandler(context.getContentResolver());
+            // Try to add album art
+            Resources r = context.getResources();
+            mNowPlayingOverlay = r.getDrawable(R.drawable.indicator_ic_mp_playing_large);
+
+            Bitmap b = BitmapFactory.decodeResource(r, R.drawable.albumart_mp_unknown_list);
+            mDefaultAlbumIcon = new BitmapDrawable(context.getResources(), b);
+            // no filter or dither, it's a lot faster and we can't tell the difference
+            mDefaultAlbumIcon.setFilterBitmap(false);
+            mDefaultAlbumIcon.setDither(false);
+            getColumnIndices(cursor);
+            mResources = context.getResources();
+            // End of try to add album art
         }
         private void getColumnIndices(Cursor cursor) {
             if (cursor != null) {

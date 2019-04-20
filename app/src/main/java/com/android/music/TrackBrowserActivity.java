@@ -1476,7 +1476,7 @@ public class TrackBrowserActivity extends ListActivity
             if ((mIsNowPlaying && cursor.getPosition() == id)
                     || (!mIsNowPlaying && !mDisableNowPlayingIndicator
                                && cursor.getLong(mAudioIdIdx) == id)) {
-                iv.setImageResource(R.drawable.indicator_ic_mp_playing_list);
+                iv.setImageResource(R.drawable.indicator_ic_mp_playing_large);
                 iv.setVisibility(View.VISIBLE);
             } else {
                 iv.setVisibility(View.GONE);

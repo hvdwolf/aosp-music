@@ -524,7 +524,7 @@ public class AlbumBrowserActivity extends ListActivity
             mAlbumSongSeparator = context.getString(R.string.albumsongseparator);
 
             Resources r = context.getResources();
-            mNowPlayingOverlay = r.getDrawable(R.drawable.indicator_ic_mp_playing_list);
+            mNowPlayingOverlay = r.getDrawable(R.drawable.indicator_ic_mp_playing_large);
 
             Bitmap b = BitmapFactory.decodeResource(r, R.drawable.albumart_mp_unknown_list);
             mDefaultAlbumIcon = new BitmapDrawable(context.getResources(), b);

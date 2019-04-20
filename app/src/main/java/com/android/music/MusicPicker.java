@@ -269,7 +269,7 @@ public class MusicPicker extends ListActivity
             // currently being previewed for the user.
             ImageView iv = vh.play_indicator;
             if (id == mPlayingId) {
-                iv.setImageResource(R.drawable.indicator_ic_mp_playing_list);
+                iv.setImageResource(R.drawable.indicator_ic_mp_playing_large);
                 iv.setVisibility(View.VISIBLE);
             } else {
                 iv.setVisibility(View.GONE);
