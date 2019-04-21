@@ -5,8 +5,8 @@ android {
     buildToolsVersion "27.0.3"
 
     defaultConfig {
-        versionCode 2
-        versionName "1.1"
+        versionCode 3
+        versionName "1.3"
         applicationId "com.android.music"
         minSdkVersion 23
         targetSdkVersion 26

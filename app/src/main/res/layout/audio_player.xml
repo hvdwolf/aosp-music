@@ -19,9 +19,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/bk_player"
     android:orientation="vertical">
-<!--    <View android:id="@+id/statusbg" android:layout_width="match_parent" android:layout_height="25dp" android:layout_alignParentTop="true"/>
-    <View android:id="@+id/navbarbg" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentBottom="true"/>
--->
 
 
     <LinearLayout
@@ -49,16 +46,22 @@
 
            <ImageButton android:id="@+id/curplaylist"
                 android:src="@drawable/ic_mp_current_playlist_btn"
+                tools:ignore="ContentDescription"
+                android:background="@color/transparent"
                 android:layout_width="85dip"
                 android:layout_height="54dip"
                 android:layout_marginTop="14dip" />
 
            <ImageButton android:id="@+id/shuffle"
+                tools:ignore="ContentDescription"
+                android:background="@color/transparent"
                 android:layout_width="85dip"
                 android:layout_height="54dip"
                 android:layout_marginTop="20dip" />
 
            <ImageButton android:id="@+id/repeat"
+                tools:ignore="ContentDescription"
+                android:background="@color/transparent"
                 android:layout_width="85dip"
                 android:layout_height="54dip"
                 android:layout_marginTop="20dip" />

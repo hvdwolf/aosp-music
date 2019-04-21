@@ -535,7 +535,7 @@ public class PlaylistBrowserActivity
 
     static class PlaylistListAdapter extends SimpleCursorAdapter {
         private final Drawable mNowPlayingOverlay;
-        private final BitmapDrawable mDefaultAlbumIcon;
+        private final BitmapDrawable mDefaultListIcon;
         int mTitleIdx;
         int mIdIdx;
         private final Resources mResources;
@@ -569,11 +569,11 @@ public class PlaylistBrowserActivity
             Resources r = context.getResources();
             mNowPlayingOverlay = r.getDrawable(R.drawable.indicator_ic_mp_playing_large);
 
-            Bitmap b = BitmapFactory.decodeResource(r, R.drawable.albumart_mp_unknown_list);
-            mDefaultAlbumIcon = new BitmapDrawable(context.getResources(), b);
+            Bitmap b = BitmapFactory.decodeResource(r, R.drawable.bk_player);
+            mDefaultListIcon = new BitmapDrawable(context.getResources(), b);
             // no filter or dither, it's a lot faster and we can't tell the difference
-            mDefaultAlbumIcon.setFilterBitmap(false);
-            mDefaultAlbumIcon.setDither(false);
+            mDefaultListIcon.setFilterBitmap(false);
+            mDefaultListIcon.setDither(false);
             getColumnIndices(cursor);
             mResources = context.getResources();
             // End of try to add album art
